@@ -90,7 +90,7 @@
                 </div>
             @endif
 
-            <div class="db-content">
+            <div class="db-title">
                 <h3>Title</h3>
                 @foreach ($movies as $movie)
                 <ul>
