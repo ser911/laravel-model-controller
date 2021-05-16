@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ProductController@index' );
 
+Route::get('/movie/{id}', 'ProductController@show');
+
+

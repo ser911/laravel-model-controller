@@ -58,6 +58,17 @@
                 text-transform: uppercase;
             }
 
+            .db-content{
+                
+            }
+
+            ul {
+                padding-left: 0;
+                
+            }
+             ul li{
+                 list-style-type: none;
+             }
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -79,13 +90,26 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="db-content">
+                <h3>Title</h3>
                 @foreach ($movies as $movie)
                 <ul>
-                    <li>{{$movie->title}}</li>
+                    
+                    <li>{{ $movie->Title }}</li>
+                    
+                </ul>
+                @endforeach
+                <h3>Author</h3>
+                @foreach ($movies as $movie)
+                <ul>
+                    
+                    <li>{{ $movie->author}}</li>
+                    
                 </ul>
                 @endforeach
             </div>
+            
+
         </div>
     </body>
 </html>
